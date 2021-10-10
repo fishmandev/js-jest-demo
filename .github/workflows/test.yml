@@ -1,0 +1,16 @@
+name: 'Tests'
+on:
+  push:
+  pull-request:
+jobs:
+  test-job:
+    runs-on: ubuntu-16.04
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      name: 'Setup node'
+      with:
+        node-version: '16.x'
+
+    - name: 'Run test'
+      run: yarn test
