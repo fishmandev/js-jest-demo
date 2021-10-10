@@ -3,5 +3,8 @@
   "packageManager": "yarn@3.0.2",
   "scripts": {
     "app": "node app.js"
+  },
+  "devDependencies": {
+    "jest": "^27.2.5"
   }
 }
