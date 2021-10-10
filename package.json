@@ -2,7 +2,8 @@
   "name": "noname",
   "packageManager": "yarn@3.0.2",
   "scripts": {
-    "app": "node app.js"
+    "app": "node app.js",
+    "test": "jest"
   },
   "devDependencies": {
     "jest": "^27.2.5"
