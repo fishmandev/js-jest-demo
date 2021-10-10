@@ -7,15 +7,15 @@ on:
     branches:
       - main
 jobs:
-  test:
-    runs-on: ubuntu-16.04
+  unit:
+    runs-on: ubuntu-latest
     steps:
-    - name: Checkout
     - uses: actions/checkout@v2
-    - name: Setup node
-    - uses: actions/setup-node@v2
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
       with:
         node-version: '16.x'
-
-    - name: Run test
-      run: yarn test
+    - name: yarn install
+      run:  yarn install
+    - name: yarn test
+      run:  yarn test
